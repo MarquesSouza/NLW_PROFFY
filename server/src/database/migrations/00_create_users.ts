@@ -1,5 +1,4 @@
 import Knex from 'knex';
-import e from 'express';
 
 export async function up(knex: Knex){
     return knex.schema.createTable('users',table=>{
