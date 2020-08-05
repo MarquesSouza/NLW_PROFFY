@@ -19,32 +19,41 @@ routes.post('/classes',async (request,response)=>{
         cost,
         schedule
     }= request.body;
-
-    const insertedUsersId =await db('users').insert({
-        name,
-        avatar,
-        whatsapp,
-        bio,
-    })
-    const user_id= insertedUsersId[0];
-    const insertedClassesId = await db('classes').insert({
-        subject,
-        cost,
-        user_id,
-
-    })
-    const class_id=insertedClassesId[0];
-    const classSchedule=schedule.map((scheduleItem:ScheduleItem)=>{
-        return{
-            class_id,
-            week_day:scheduleItem.week_day,
-            from:convertHourToMinutes(scheduleItem.from),
-            to:convertHourToMinutes(scheduleItem.to),
-        };
-    })
-    await db('class_schedule').insert(classSchedule);
-
-    return response.send();
+    
+    const trx = await db.transaction();
+    
+    try{
+        const insertedUsersId =await trx('users').insert({
+            name,
+            avatar,
+            whatsapp,
+            bio,
+        })
+        const user_id= insertedUsersId[0];
+        const insertedClassesId = await trx('classes').insert({
+            subject,
+            cost,
+            user_id,
+    
+        })
+        const class_id=insertedClassesId[0];
+        const classSchedule=schedule.map((scheduleItem:ScheduleItem)=>{
+            return{
+                class_id,
+                week_day:scheduleItem.week_day,
+                from:convertHourToMinutes(scheduleItem.from),
+                to:convertHourToMinutes(scheduleItem.to),
+            };
+        })
+        await trx('class_schedule').insert(classSchedule);
+        await trx.commit();
+        return response.status(201).send();
+    }catch(err){
+        await trx.rollback();
+        return response.status(400).json({
+            error:'Unexprected error while creating new class'
+        })
+    }
 });
 
 export default routes;
