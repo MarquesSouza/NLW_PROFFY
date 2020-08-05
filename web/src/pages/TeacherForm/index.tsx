@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHeader from '../../components/PageHeader';
 
+import warningIcon from '../../assets/images/icons/warning.svg';
 import './styles.css';
 import Input from '../../components/Input';
 
@@ -20,12 +21,21 @@ function TeacherForm(){
                     
                 </fieldset>
                 <fieldset>
-                    <legend>Seus Dados</legend>
-                    <Input name="name" label="Nome Completo"/>
-                    <Input name="avatar" label="Avatar"/>
-                    <Input name="whatsapp" label="Whatsapp"/>
+                    <legend>Seus Aula</legend>
+                    <Input name="subject" label="Matéria"/>
+                    <Input name="cost" label="Custo da sua hora por aula"/>
                     
                 </fieldset>
+
+                <footer>
+                    <p>
+                        <img src={warningIcon} alt="Aviso importante"/>
+                        Importante ! <br/>
+                    </p>
+                    <button type="button">
+                        Salvar Cadastro
+                    </button>
+                </footer>
             </main>
         </div>
         )
