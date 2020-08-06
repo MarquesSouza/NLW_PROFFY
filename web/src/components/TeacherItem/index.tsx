@@ -2,29 +2,51 @@ import React from 'react';
 
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
 
-import './styles.css'
-function TeacherItem(){
- return(
+import './styles.css';
+import api from '../../services/api';
+export interface Teacher{
+      avatar:string;
+      bio:string;
+      cost:number;
+      id:number;
+      name:string;
+      subject:string;
+      whatsapp:string;  
+}
+interface TeacherItemProps{
+    teacher:Teacher
+}
+
+const TeacherItem: React.FC<TeacherItemProps>=({teacher})=>{
+    function createNewConnection(){
+        api.post('connections',{
+            user_id:teacher.id,
+        })
+    }
+    return(
     <article className="teacher-item">
     <header>
-        <img src="https://avatars0.githubusercontent.com/u/23464588?s=460&u=534e2e94a794fb95ac878915b8b1e267651c6021&v=4" alt="Marques de Souza"/>
+        <img src={teacher.avatar} alt={teacher.name}/>
         <div>
-            <strong>Marques de Souza</strong>
-            <span>Quimica</span>
+            <strong>{teacher.name}</strong>
+            <span>{teacher.subject}</span>
         </div>
     </header>
     <p>
-        Entusiasta das melhores tecnologias da Quimica avançada.
-        <br /> <br />
-        No mundo da Quimica
+        {teacher.bio}
     </p>
     <footer>
         <p>
             Preço/Hora
-            <strong> R$ 100,00</strong>
+            <strong> R${teacher.cost}</strong>
         </p>
-        <button type="button"><img src={whatsappIcon} alt="WhatsAppp"/>
-        Entrar em contato</button>
+        <a 
+            target="_blank" 
+            onClick={createNewConnection} 
+            href={`https://wa.me/${teacher.whatsapp}`}>
+            <img src={whatsappIcon} alt="WhatsAppp"/>
+            Entrar em contato
+        </a>
         
     </footer>
 </article>
