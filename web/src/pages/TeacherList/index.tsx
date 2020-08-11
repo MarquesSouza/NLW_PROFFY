@@ -3,9 +3,9 @@ import React, { useState, FormEvent } from 'react';
 import './styles.css';
 import PageHeader from '../../components/PageHeader';
 import TeacherItem, {Teacher} from '../../components/TeacherItem';
-import Input from '../../components/Input';
 import Select from '../../components/Select';
 import api from '../../services/api';
+import InputForm from '../../components/InputForm';
 
 function TeacherList(){
     const [teachers,setTeachers]=useState([]);
@@ -55,7 +55,7 @@ function TeacherList(){
                           
                         ]}
                     />
-                        <Input 
+                        <InputForm 
                             type="time" 
                             name="time" 
                             label="Hora"

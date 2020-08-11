@@ -11,5 +11,6 @@
     align-items: center;
 }
 .banner-container{
-   
+   width: 50%;
+   margin-left: 0;
 }

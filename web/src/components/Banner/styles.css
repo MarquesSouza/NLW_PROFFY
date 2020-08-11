@@ -10,10 +10,10 @@
    background: var(--color-primary);
 }
 .banner-image{
-    width: 100%;
-    height: 100vh;
+    width: 100vh;
+    height: 100%;
     transform: rotate(90deg);
-    
+    border: solid 1px;
 }
 .logo-container{
     position: absolute;

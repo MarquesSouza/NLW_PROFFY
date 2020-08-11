@@ -2,12 +2,12 @@ import React,{useState, FormEvent} from 'react';
 import PageHeader from '../../components/PageHeader';
 
 import warningIcon from '../../assets/images/icons/warning.svg';
-import Input from '../../components/Input';
 import Textarea from '../../components/Textarea';
 import Select from '../../components/Select';
 import './styles.css';
 import api from '../../services/api';
 import { useHistory } from 'react-router-dom';
+import InputForm from '../../components/InputForm';
 
 
 function TeacherForm(){
@@ -66,19 +66,19 @@ function TeacherForm(){
                 <form onSubmit={handleCreateClass}>
                 <fieldset>
                     <legend>Seus Dados</legend>
-                    <Input 
+                    <InputForm
                         name="name"
                         label="Nome Completo"
                         value={name}
                         onChange={(e)=>{setName(e.target.value)}}
                         />
-                    <Input 
+                    <InputForm 
                         name="avatar" 
                         label="Avatar"
                         value={avatar}
                         onChange={(e)=>{setAvatar(e.target.value)}}
                         />
-                    <Input 
+                    <InputForm
                         name="whatsapp" 
                         label="Whatsapp"
                         value={whatsapp}
@@ -103,7 +103,7 @@ function TeacherForm(){
                             {value:'Quimica',label:'Quimica'}
                         ]}
                     />
-                    <Input 
+                    <InputForm 
                         name="cost" 
                         label="Custo da sua hora por aula"
                         value={cost}
@@ -135,14 +135,14 @@ function TeacherForm(){
                                   
                                 ]}
                             />
-                            <Input 
+                            <InputForm 
                                 name="from" 
                                 label="Das" 
                                 type="time"
                                 value={scheduleItem.from}
                                 onChange={e=>setScheduleItemValue(index,'from',e.target.value)}
                                 />
-                            <Input 
+                            <InputForm 
                                 name="to" 
                                 label="Até" 
                                 type="time"
