@@ -1,13 +1,16 @@
 #page-login-container{
     width: 100vw;
     height: 100vh;
-
+    margin: 0;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .banner-container{
-   width: 50%;
-   margin-left: 0;
+    margin-top: 0;
+    margin-left: 0;
+}
+main{
+    width: 100%;
 }
