@@ -7,16 +7,16 @@ function LoginForm(){
     return (
         <div id="page-login-container" className="container">
             <Banner />
+            <div className="form-container">
             <main>
                 <form>
-                   
+                    <h2>Fazer login</h2>
                     <fieldset>
-                        <legend>Fazer Login</legend>
                         <Input name="email" placeholder="E-mail"/>
                         <Input name="senha" placeholder="Senha" password={true} />
                     </fieldset>
                     <fieldset>
-                        <div className="option-block">
+                        <div className="option-container">
                             <div className="checkbox-block">
                                 <input type="checkbox" className="checkbox"/>
                                 <label >Lembrar-me</label>
@@ -41,6 +41,7 @@ function LoginForm(){
                     </div>
                 </footer>
             </main>
+            </div>
         </div>
     );
 }

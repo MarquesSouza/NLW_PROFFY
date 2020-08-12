@@ -1,16 +1,38 @@
 #page-login-container{
     width: 100vw;
     height: 100vh;
-    margin: 0;
+    
+    
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    color: var(--color-text-in-primary);
+    background: var(--color-primary);
 }
 .banner-container{
+    
+    width: 100vw;
+    max-height: max-content;
     margin-top: 0;
-    margin-left: 0;
 }
-main{
-    width: 100%;
+.form-container{
+    width: 300px;
+    height: 300px;
+    margin-right: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+
+}
+@media( min-width: 1100px){
+    #page-login-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .banner-container{
+        width: 300px;
+        height: 300px;
+        margin-top: 0;
+        margin-left: 0;
+    }
 }
