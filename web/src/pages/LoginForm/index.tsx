@@ -15,29 +15,31 @@ function LoginForm(){
                         <Input name="email" placeholder="E-mail"/>
                         <Input name="senha" placeholder="Senha" password={true} />
                     </fieldset>
-                    <fieldset>
-                        <div className="option-container">
+                    <div className="option-container">
                             <div className="checkbox-block">
                                 <input type="checkbox" className="checkbox"/>
                                 <label >Lembrar-me</label>
                             </div>
                              <Link to="/recoverpassword" className="RecoverPassword"> Esqueci minha senha </Link>
                                 
-                        </div>
+                    </div>
                         <Button >Entrar</Button>
-                    </fieldset> 
                 </form>
                 <div className="footer-block">
                         <div className="cadastro-block">
                             <label htmlFor="" className="cadastro-label">
-                                Não tem cadastro?
+                            Não tem cadastro?
+                            <br/>
                             </label>
+                        
                             <Link to="/cadastro"className="cadastro-link">Cadastre-se</Link>
                         </div>
+                        <div className="messagem-block">
                         <label  className="messagem">
                             E de graça
                             <img src="" alt=""/>
                         </label>
+                        </div>
                     </div> 
                </div>
               
