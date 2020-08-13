@@ -1,19 +1,20 @@
 .banner-container{
-   width: 100%;
-   height: 100%;
+   min-width: 60rem;
+   min-height: 20rem;
    display: flex;
-   align-items: center;
    justify-content: center;
+   align-items: stretch;
    color: var(--color-text-in-primary);
+   background: var(--color-primary);
     
 }
+/*
 .banner-image{
     height: 50%;
-    width: 200%;
     transform: rotate(90deg);
-    background: var(--color-primary);
- 
+    
 }
+*/
 .logo-container{
     position: absolute;
  }

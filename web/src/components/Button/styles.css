@@ -1,0 +1,17 @@
+.button-component{
+    width: 30rem;
+    height: 6rem;
+    border-radius: 0.8rem;
+    border: 0;
+    font: 700 2.0rem Archivo;
+    
+    transition: backgrond-color 0.2s;
+   
+    color: var(--color-text-complement);
+    background: var(--color-line-in-white);
+
+}
+.button-component::houver{
+    color: var(--color-button-text);
+    background-color: var(--color-secundary);
+}

@@ -7,11 +7,11 @@ import banner from '../../assets/images/success-background.svg'
 function Banner(){
     return (
         <div className="banner-container">
-            <img 
+            {/*<img 
                 className="banner-image"
                 src={banner} 
                 alt="Banner" 
-               />
+            /> */}
             <Logo />
             
         </div>
