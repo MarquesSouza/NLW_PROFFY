@@ -20,7 +20,7 @@ function LoginForm(){
                                 <input type="checkbox" className="checkbox"/>
                                 <label >Lembrar-me</label>
                             </div>
-                             <Link to="/recoverpassword" className="RecoverPassword"> Esqueci minha senha </Link>
+                             <Link to="/recover-password" className="RecoverPassword"> Esqueci minha senha </Link>
                                 
                     </div>
                         <Button >Entrar</Button>
