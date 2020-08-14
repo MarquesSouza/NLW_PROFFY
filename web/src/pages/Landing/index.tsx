@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import landingImg from '../../assets/images/landing.svg';
 import stydyIcon from '../../assets/images/icons/study.svg';
 import giveClassesIcon from '../../assets/images/icons/give-classes.svg';
-import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg'
+import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
 
 import './styles.css';
 import api from '../../services/api';

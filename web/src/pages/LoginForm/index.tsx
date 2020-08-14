@@ -4,6 +4,8 @@ import './styles.css';
 import Banner from '../../components/Banner';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
+import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
+
 function LoginForm(){
     return (
         <div id="page-login-container" className="container">
@@ -18,7 +20,7 @@ function LoginForm(){
                     <div className="option-container">
                             <div className="checkbox-block">
                                 <input type="checkbox" className="checkbox"/>
-                                <label >Lembrar-me</label>
+                                <label className="label-checkbox">Lembrar-me</label>
                             </div>
                              <Link to="/recover-password" className="RecoverPassword"> Esqueci minha senha </Link>
                                 
@@ -36,8 +38,8 @@ function LoginForm(){
                         </div>
                         <div className="messagem-block">
                         <label  className="messagem">
-                            E de graça
-                            <img src="" alt=""/>
+                            E de graça {'   '}
+                            <img src={purpleHeartIcon} alt="Coração Roxo"/>
                         </label>
                         </div>
                     </div> 

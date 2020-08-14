@@ -38,8 +38,10 @@
     justify-content: space-between;
     padding: 1rem;
 }
-#page-login-container .checkbox-block{
+#page-login-container .checkbox-block .label-checkbox{
+    margin-left: 1rem;
 }
+
 #page-login-container .footer-block{
     padding: 0 15rem;
     display:  flex;
