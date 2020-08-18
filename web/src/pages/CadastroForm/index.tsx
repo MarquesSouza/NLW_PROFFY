@@ -23,10 +23,10 @@ function CadastroForm(){
                         Preencha os dados abaixo para começar.
                     </label>
                     <fieldset className="login-block">
-                        <Input name="name" placeholder="Nome"/>
-                        <Input name="seconde-name" placeholder="Sobrenome"/>
-                        <Input name="email" placeholder="E-mail"/>
-                        <Input name="password" placeholder="Senha" password={true} />
+                        <Input name="name" label="Nome"/>
+                        <Input name="seconde-name" label="Sobrenome"/>
+                        <Input name="email" label="E-mail"/>
+                        <Input name="password" label="Senha" password={true} />
                     </fieldset>
                         <Button >Concluir cadastro</Button>
                 </form>

@@ -23,7 +23,7 @@ function RecoverPassword(){
                         Não esquenta, vamos resolver esta situação (^.^)/
                     </label>
                     <fieldset className="login-block">
-                        <Input name="email" placeholder="E-mail"/>
+                        <Input name="email" label="E-mail"/>
                     </fieldset>
                         <Button >Enviar</Button>
                 </form>

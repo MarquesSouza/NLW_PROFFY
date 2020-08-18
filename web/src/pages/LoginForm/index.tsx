@@ -14,8 +14,8 @@ function LoginForm(){
                 <form>
                     <h2>Fazer login</h2>
                     <fieldset className="login-block">
-                        <Input name="email" placeholder="E-mail"/>
-                        <Input name="senha" placeholder="Senha" password={true} />
+                        <Input name="email" label="E-mail"/>
+                        <Input name="senha" label="Senha" password={true} />
                     </fieldset>
                     <div className="option-container">
                             <div className="checkbox-block">
