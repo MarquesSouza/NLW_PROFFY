@@ -1,7 +1,7 @@
 # NLW_PROFFY: Marques de Souza 
 
 [![Série](https://https://img.shields.io/badge/MarquesSouza-Proffy-blueviolet)](https://github.com/MarquesSouza/NLW_PROFFY)
-[![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)]()
+[![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/MarquesSouza/NLW_PROFFY/blob/master/LICENSE)
 
 > Projeto da Proffy Rocketseat desenvolvido durante a semana NLW. No qual o desenvolvimento de uma aplicação em Node.js, React e ReactNative para conectar professores e alunos.
 
