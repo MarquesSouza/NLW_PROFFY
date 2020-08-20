@@ -8,7 +8,7 @@
 - [Sobre o NLW/Introduce in NLW](#-sobre-nlw)
 - [Sobre/ Introduce](#-sobre)
 - [Tecnologias Utilizadas/List Technologies](#-tecnologias-utilizadas)
-- [Contributing/Contribuir](#-Contributing/Contribuir)
+- [Contributing/Contribuir](#-contributing-contribuir)
 - [Versioning/Versionamento](#-versioning-versionamento)
 - [History/Históric](#-history-históric)
 - [License/Licença do Projeto](#-license-licença-do-projeto)
