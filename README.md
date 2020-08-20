@@ -9,9 +9,9 @@
 - [Sobre/ Introduce](#-sobre)
 - [Tecnologias Utilizadas/List Technologies](#-tecnologias-utilizadas)
 - [Contributing/Contribuir](#-contributing/contribuir)
-- [Versioning/Versionamento](#-Versioning/Versionamento)
-- [History/Históric](#-History/Históric)
-- [License/Licença do Projeto](#-License/Licenca-do-Projeto)
+- [Versioning/Versionamento](#-versioning/versionamento)
+- [History/Históric](#-history/históric)
+- [License/Licença do Projeto](#-license/licenca-do-projeto)
 - [Como baixar o projeto](#-como-baixar-o-projeto)
 
 ---
