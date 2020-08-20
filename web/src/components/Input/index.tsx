@@ -17,7 +17,7 @@ const Input: React.FC<InputProps>= ({label,name,password,...rest})=>{
     }
     return(
         <div className="input-block">
-            <input type={isVisiblePassword?"password":"text"} id={name} />
+            <input type={isVisiblePassword?"password":"text"} id={name} {...rest}/>
             <label>
                 <span>{label}</span>
             </label>

@@ -9,11 +9,14 @@
     
     transition: backgrond-color 0.2s;
    
-    color: var(--color-text-complement);
-    background: var(--color-line-in-white);
+   
 
 }
-.button-component::houver{
+.button-component:not(:disabled){
     color: var(--color-button-text);
     background-color: var(--color-secundary);
+}
+.button-component:disabled{
+    color: var(--color-text-complement);
+    background: var(--color-line-in-white);
 }
