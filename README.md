@@ -9,7 +9,7 @@
 - [Sobre/ Introduce](#-sobre)
 - [Tecnologias Utilizadas/List Technologies](#-tecnologias-utilizadas)
 - [Contributing/Contribuir](#-contributingcontribuir)
-- [Versioning/Versionamento](#octocat-versioningversionamentoo)
+- [Versioning/Versionamento](#octocat-versioningversionamento)
 - [History/Históric](#-historyhistórico)
 - [License/Licença do Projeto](#-licenselicença-do-projeto)
 - [Como baixar o projeto](#-como-baixar-o-projeto)
