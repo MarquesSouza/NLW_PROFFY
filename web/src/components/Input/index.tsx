@@ -1,5 +1,6 @@
 import React, { InputHTMLAttributes,  FormEvent,HtmlHTMLAttributes, useState, Children } from 'react';
-import warningIcon from '../../assets/images/icons/warning.svg';
+import eyesIcon from '../../assets/images/icons/eyes.svg';
+import eyesBlockIcon from '../../assets/images/icons/eyes-block.svg';
    
 import './styles.css';
 
@@ -21,7 +22,18 @@ const Input: React.FC<InputProps>= ({label,name,password,...rest})=>{
             <label>
                 <span>{label}</span>
             </label>
-           
+            {password&&(
+                isVisiblePassword
+                ?
+                <button className="Password-Container"onClick={handleToggleVisiblePassword} type="button">
+                    <img src={eyesBlockIcon}/>
+                </button>
+                :
+                <button className="Password-Container"onClick={handleToggleVisiblePassword} type="button">
+                    <img src={eyesIcon}/>
+                </button>
+            )}
+            
         </div>
     )
 }
