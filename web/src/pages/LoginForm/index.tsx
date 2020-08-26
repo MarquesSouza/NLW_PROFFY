@@ -54,7 +54,8 @@ function LoginForm(){
                     <div className="option-container">
                             <div className="checkbox-block">
                                 <input type="checkbox" className="checkbox"/>
-                                <label className="label-checkbox">Lembrar-me</label>
+                                <span className="checkmark"></span>
+                               <label className="label-checkbox">Lembrar-me</label>
                             </div>
                              <Link to="/recover-password" className="RecoverPassword"> Esqueci minha senha </Link>
                                 

@@ -41,7 +41,22 @@
 #page-login-container .checkbox-block .label-checkbox{
     margin-left: 1rem;
 }
-
+#page-login-container .checkbox-block .checkbox{
+    color: var(--color-secundary);
+    opacity: 0;
+}
+#page-login-container .checkbox-block .checkmark{
+    height: 25px;
+    width: 25px;
+    background-color:red;
+    color: var(--color-secundary);
+}
+#page-login-container .checkbox-block input ~ .checkmark{
+    background-color:red;
+}
+#page-login-container .checkbox-block input:checked ~ .checkmark{
+    background-color: red;
+}
 #page-login-container .footer-block{
     padding: 0 15rem;
     display:  flex;

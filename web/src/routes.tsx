@@ -6,6 +6,7 @@ import TeacherForm from './pages/TeacherForm';
 import LoginForm from './pages/LoginForm';
 import RecoverPassword from './pages/RecoverPassword';
 import CadastroForm from './pages/CadastroForm';
+import SucessPage from './pages/SucessPage';
 
 function Routes(){
     return (
@@ -15,7 +16,7 @@ function Routes(){
             <Route path="/give-classes" component={TeacherForm} />
             <Route path="/login" component={LoginForm} />
             <Route path="/recover-password" component={RecoverPassword} />
-            <Route path="/cadastro" component={CadastroForm} />
+            <Route path="/sucesso" component={SucessPage} />
         </BrowserRouter>
     )
 }
