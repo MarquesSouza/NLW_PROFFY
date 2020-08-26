@@ -16,7 +16,17 @@ function Routes(){
             <Route path="/give-classes" component={TeacherForm} />
             <Route path="/login" component={LoginForm} />
             <Route path="/recover-password" component={RecoverPassword} />
-            <Route path="/sucesso" component={SucessPage} />
+            <Route path="/sucesso" render={(props)=>(
+                <SucessPage 
+                title="Cadastro Concluido"
+                text="Agora você faz parte da plataforma da Proffy. 
+                Tenha uma ótima experiência."
+                link="/"
+                linktext="Fazer login"
+                {...props}
+                />
+                )
+            } />
         </BrowserRouter>
     )
 }

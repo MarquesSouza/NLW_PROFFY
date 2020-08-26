@@ -3,14 +3,9 @@
     width: 100vw;
     height: 100vh;
     background-color:var(--color-primary);
+    background-image:url('../../assets/images/success-background.svg')
 }
 
-#sucess-container .background-image{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    transform: rotate(90deg) ; 
-}  
 #sucess-container .check-icon-image{
     height: 20rem;
     width: 20rem;
@@ -36,15 +31,13 @@
     margin-top: 0.8rem;
     color: var(--color-input-background);
 }
-#sucess-container .sucess-context span{
+#sucess-container .sucess-context p{
     font-weight: 500;
     font-size: 2.4rem;
     line-height:4.6rem;
     margin-top: 0.8rem;
     color: var(--color-title-in-primary);
 }
-@media( min-width: 1100px){
-    #sucess-container .background-image{
-        transform: rotate(0deg) ;        
-    }   
- }
+#sucess-container .sucess-context link{
+    background: var(--color-secundary);
+}

@@ -1,24 +1,30 @@
 import React from 'react';
 import checkIcon from '../../assets/images/icons/success-check-icon.svg';
-import background from '../../assets/images/success-background.svg';
 import Button from '../../components/Button';
 import './styles.css';
-
-function SucessPage(){
-    function handleButtonRedirect(){
-        
-    }
+import { Link, Redirect } from 'react-router-dom';
+interface SuccessProps {
+    title:string;
+    text:string;
+    linktext:string;
+    link:string;
+}
+const SucessPage:React.FC<SuccessProps> = ({title,text,link,linktext})=>{
+   
     return(
         <div id="sucess-container" className="container">
-            <img src={background} className="background-image"/>
             
             <div className="sucess-context">
          
             <img src={checkIcon} className="check-icon-image"/>
-            <h1>Cadastro Concluido</h1>
-            <span>Texto fonte 2</span>
-            <Button onClick={handleButtonRedirect}>Fazer Login</Button>
+            <h1>{title}</h1>
+            <p>{text}</p>
+            <Link to={link}>
+                <Button >{linktext}</Button>
+            </Link>
+
             </div>
+            
         </div>
     )   
 }   
