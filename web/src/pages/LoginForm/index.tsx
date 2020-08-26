@@ -71,7 +71,7 @@ function LoginForm(){
                             <br/>
                             </label>
                         
-                            <Link to="/cadastro"className="cadastro-link">Cadastre-se</Link>
+                            <Link to="/register"className="cadastro-link">Cadastre-se</Link>
                         </div>
                         <div className="messagem-block">
                         <label  className="messagem">

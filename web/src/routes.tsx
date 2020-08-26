@@ -16,12 +16,23 @@ function Routes(){
             <Route path="/give-classes" component={TeacherForm} />
             <Route path="/login" component={LoginForm} />
             <Route path="/recover-password" component={RecoverPassword} />
-            <Route path="/sucesso" render={(props)=>(
+            <Route path="/register" component={CadastroForm} />
+            <Route path="/recover-sucess" render={(props)=>(
+                <SucessPage 
+                title="Redefinição Enviada!"
+                text="Boa, agora é só verificar o e-mail que foi enviado para você redefinir sua senha e aproveitar os estudos."
+                link="/login"
+                linktext="Voltar ao login"
+                {...props}
+                />
+                )
+            } />
+            <Route path="/register-sucess" render={(props)=>(
                 <SucessPage 
                 title="Cadastro Concluido"
                 text="Agora você faz parte da plataforma da Proffy. 
                 Tenha uma ótima experiência."
-                link="/"
+                link="/login"
                 linktext="Fazer login"
                 {...props}
                 />

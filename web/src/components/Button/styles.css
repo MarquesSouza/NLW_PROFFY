@@ -20,3 +20,6 @@
     color: var(--color-text-complement);
     background: var(--color-line-in-white);
 }
+.button-component:hover{
+    background: var(--color-secundary-dark);
+}

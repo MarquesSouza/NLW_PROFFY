@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes, Children } from 'react';
+import React, { InputHTMLAttributes } from 'react';
 
 import './styles.css';
 interface ButtonProps extends InputHTMLAttributes<HTMLButtonElement>{
