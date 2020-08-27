@@ -21,11 +21,15 @@ function Landing(){
     return(
         <div id="page-landing">
             <div id="page-landing-content" className="container">
+                <div className="page-header">
+                <h1>TESTE</h1>
+                <h1>TESTE</h1>
                 <Logo />
                 <img 
                     src={landingImg} 
                     alt="Platamaforma de estudos" 
                     className="hero-image"/>
+                </div>
                 <div className="buttons-container">
                         <Link to="/study" className="study">
                             <img src={stydyIcon} alt="Estudar"/>

@@ -11,16 +11,16 @@
 .banner-container{
     
 }
-.banner-image{
+.banner-container .banner-image{
     width: 500px;
     height: 150px;
     
 }
-.logo-container{
+.banner-container .logo-container{
     position: absolute;
  }
  @media( min-width: 1100px){
-    .banner-image{
+    .banner-container .banner-image{
         height: 500px;
         width: 200rem;
         transform: rotate(90deg) ;        
