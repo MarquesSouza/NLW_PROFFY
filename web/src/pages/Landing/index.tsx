@@ -22,14 +22,16 @@ function Landing(){
         <div id="page-landing">
             <div id="page-landing-content" className="container">
                 <div className="page-header">
-                <h1>TESTE</h1>
-                <h1>TESTE</h1>
                 <Logo />
+                <div className="hero-image">
                 <img 
                     src={landingImg} 
                     alt="Platamaforma de estudos" 
-                    className="hero-image"/>
+                    />
                 </div>
+                
+                </div>
+                <footer>
                 <div className="buttons-container">
                         <Link to="/study" className="study">
                             <img src={stydyIcon} alt="Estudar"/>
@@ -40,10 +42,19 @@ function Landing(){
                             Dar Aulas
                         </Link>
                 </div>
+                    <div className="message-container">
+                    <h2 className="message-styles-light">
+                        Seja bem-vindo 
+                    </h2>
+                    <h2 className="message-styles-dark">
+                        O que deseja fazer?
+                    </h2>
+                    </div>
                     <span className="total-connections">
                         Total de {totalConnections} conexões ja realizadas 
                         <img src={purpleHeartIcon} alt="Coração Roxo"/>
                     </span>
+                </footer>
             </div>
             
         </div>
